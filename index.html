@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Studio - Kolkata's Premier Makeup Destination</title>
+    <meta name="description" content="Professional makeup artistry for weddings, parties, and special events in Kolkata. We travel across India to make your day perfect. Academy training available.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Glamour Studio - Kolkata's Premier Makeup Destination">
+    <meta property="og:description" content="Professional makeup artistry for weddings, parties, and special events. We travel across India to make your day perfect.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://yourusername.github.io/glamour-studio">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💄</text></svg>">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun sun-icon"></i>
+        <i class="fas fa-moon moon-icon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Glamour Studio</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#academy" class="nav-link">Academy</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://cdn.coverr.co/videos/coverr-makeup-artist-applying-foundation/1080p.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Glamour Studio</h1>
+            <p class="hero-subtitle">Kolkata's Premier Makeup Destination</p>
+            <p class="hero-description">
+                Professional makeup artistry for weddings, parties, and special events. 
+                From intimate ceremonies to grand celebrations, we travel across states to make your day perfect.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                    <i class="fas fa-calendar-alt"></i>
+                    Book Appointment
+                </button>
+                <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">From bridal glamour to party perfection, we offer comprehensive beauty solutions across India</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="service-title">Bridal Makeup</h3>
+                    <p class="service-description">Complete bridal transformation with traditional and contemporary looks. We specialize in creating stunning bridal looks that photograph beautifully and last throughout your special day. Available for destination weddings across India with our professional travel services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-sparkles"></i> HD Bridal Makeup with Premium Products</li>
+                        <li><i class="fas fa-camera"></i> Pre-wedding Photo Shoots</li>
+                        <li><i class="fas fa-ring"></i> Engagement & Mehendi Ceremonies</li>
+                        <li><i class="fas fa-wine-glass"></i> Reception & Party Looks</li>
+                        <li><i class="fas fa-plane"></i> Destination Wedding Services</li>
+                        <li><i class="fas fa-clock"></i> Trial Sessions Available</li>
+                    </ul>
+                    <div class="service-price">Starting from ₹15,000</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="service-title">Party & Event Makeup</h3>
+                    <p class="service-description">Glamorous party looks for birthdays, anniversaries, corporate events, and special occasions. Our expert artists create stunning looks that make you the center of attention while ensuring comfort and longevity throughout your event.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-cocktail"></i> Cocktail & Party Looks</li>
+                        <li><i class="fas fa-birthday-cake"></i> Birthday & Anniversary Specials</li>
+                        <li><i class="fas fa-briefcase"></i> Corporate Event Styling</li>
+                        <li><i class="fas fa-music"></i> Festival & Cultural Events</li>
+                        <li><i class="fas fa-palette"></i> Custom Theme Makeup</li>
+                        <li><i class="fas fa-users"></i> Group Bookings Available</li>
+                    </ul>
+                    <div class="service-price">Starting from ₹5,000</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="service-title">Professional Makeup Academy</h3>
+                    <p class="service-description">Transform your passion into profession with our comprehensive makeup training programs. Learn from industry experts with hands-on experience and get certified to start your career as a professional makeup artist.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-certificate"></i> Professional Certification Courses</li>
+                        <li><i class="fas fa-user-graduate"></i> Basic to Advanced Training</li>
+                        <li><i class="fas fa-crown"></i> Bridal Specialist Programs</li>
+                        <li><i class="fas fa-briefcase"></i> Job Placement Assistance</li>
+                        <li><i class="fas fa-tools"></i> Professional Kit Included</li>
+                        <li><i class="fas fa-handshake"></i> Lifetime Mentorship Support</li>
+                    </ul>
+                    <div class="service-price">Course fees from ₹25,000</div>
+                </div>
+            </div>
+            
+            <!-- Service Features Section -->
+            <div class="service-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Award Winning</h4>
+                    <p>Recognized makeup artist with 8+ years of experience</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Pan India Service</h4>
+                    <p>We travel across India for destination weddings</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Premium Products</h4>
+                    <p>Only high-end, skin-friendly makeup brands used</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>On-Time Service</h4>
+                    <p>Punctual and professional service guaranteed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Witness the transformation stories that have made countless occasions unforgettable</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="party">Party</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be loaded by JavaScript -->
+                <!-- Static fallback for better initial loading -->
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=800&fit=crop" alt="Traditional Bridal" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Traditional Bridal</h4>
+                        <p class="portfolio-description">Kolkata Wedding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&h=800&fit=crop" alt="Contemporary Bridal" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Contemporary Bridal</h4>
+                        <p class="portfolio-description">Delhi Reception</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=800&fit=crop" alt="Glamour Party" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Glamour Party</h4>
+                        <p class="portfolio-description">Birthday Celebration</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=800&fit=crop" alt="Behind the Scenes" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Behind the Scenes</h4>
+                        <p class="portfolio-description">Our Process</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=800&fit=crop" alt="Natural Bridal" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Natural Bridal</h4>
+                        <p class="portfolio-description">Garden Wedding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=800&fit=crop" alt="Creative Party Look" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h4 class="portfolio-title">Creative Party Look</h4>
+                        <p class="portfolio-description">Fashion Event</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Packages</h2>
+                <p class="section-subtitle">Choose the perfect package for your special occasion. All packages include travel within Kolkata</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Bridal Basic</h3>
+                        <div class="pricing-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">15,000</span>
+                        </div>
+                        <p class="pricing-subtitle">Perfect for intimate ceremonies</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> HD Bridal Makeup</li>
+                        <li><i class="fas fa-check"></i> Hair Styling</li>
+                        <li><i class="fas fa-check"></i> Draping Service</li>
+                        <li><i class="fas fa-check"></i> Touch-up Kit</li>
+                        <li><i class="fas fa-check"></i> 4 Hours Service</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contact')">Book Now</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Bridal Premium</h3>
+                        <div class="pricing-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">25,000</span>
+                        </div>
+                        <p class="pricing-subtitle">Complete bridal transformation</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> HD Bridal Makeup</li>
+                        <li><i class="fas fa-check"></i> Hair Styling & Extensions</li>
+                        <li><i class="fas fa-check"></i> Draping Service</li>
+                        <li><i class="fas fa-check"></i> Pre-wedding Trial</li>
+                        <li><i class="fas fa-check"></i> Touch-up Kit</li>
+                        <li><i class="fas fa-check"></i> 6 Hours Service</li>
+                        <li><i class="fas fa-check"></i> Family Makeup (2 people)</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contact')">Book Now</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Party Glam</h3>
+                        <div class="pricing-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">8,000</span>
+                        </div>
+                        <p class="pricing-subtitle">Perfect for parties & events</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Party Makeup</li>
+                        <li><i class="fas fa-check"></i> Hair Styling</li>
+                        <li><i class="fas fa-check"></i> 2 Hours Service</li>
+                        <li><i class="fas fa-check"></i> Basic Touch-ups</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contact')">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> 
+                   Outstation charges: ₹2,000/day + travel expenses. Academy training packages available separately. 
+                   Prices may vary based on specific requirements and seasonal demand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academy Section -->
+    <section id="academy" class="academy">
+        <div class="container">
+            <div class="academy-content">
+                <div class="academy-text">
+                    <h2 class="section-title">Makeup Academy</h2>
+                    <p class="section-subtitle">Transform your passion into profession with our comprehensive makeup training programs. Learn from industry experts and become a certified makeup artist.</p>
+                    
+                    <div class="academy-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Professional Certification</h4>
+                                <p>Industry-recognized certificates upon course completion</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Small Batch Training</h4>
+                                <p>Personalized attention with limited students per batch</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Job Placement Support</h4>
+                                <p>Career guidance and placement assistance for graduates</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Enroll Now</button>
+                </div>
+                <div class="academy-images">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&h=300&fit=crop" alt="Academy training 1" class="academy-img">
+                    <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?w=400&h=300&fit=crop" alt="Academy training 2" class="academy-img academy-img-offset">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Academy training 3" class="academy-img academy-img-offset-neg">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop" alt="Academy training 4" class="academy-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Reviews</h2>
+                <p class="section-subtitle">Hear from our satisfied clients who trusted us with their special moments</p>
+            </div>
+            
+            <!-- Ratings Display -->
+            <div class="ratings-display">
+                <div class="rating-card">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="rating-label">Google Reviews</div>
+                </div>
+                <div class="rating-card">
+                    <div class="rating-score">4.8</div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="rating-label">WedMeGood</div>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b1e4?w=150&h=150&fit=crop&crop=face" alt="Priya Sharma" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Priya Sharma</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Absolutely stunning work! They traveled to Mumbai for my wedding and made me feel like a princess. The makeup lasted all day and looked perfect in every photo. The attention to detail was incredible!"</p>
+                    <div class="testimonial-meta">Bridal Makeup • Mumbai Wedding</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face" alt="Ananya Das" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Ananya Das</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Professional service for my anniversary party. The team understood exactly what I wanted and delivered beyond expectations. My husband couldn't stop complimenting how beautiful I looked!"</p>
+                    <div class="testimonial-meta">Party Makeup • Kolkata Anniversary</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Meera Joshi" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Meera Joshi</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Enrolled in their makeup academy and it was the best decision! Now I'm working as a professional makeup artist. The hands-on training and job placement support was excellent."</p>
+                    <div class="testimonial-meta">Academy Training • Professional Course</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Rahul Verma" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Rahul Verma</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Booked them for my sister's engagement in Delhi. They were punctual, professional, and the results were amazing. My sister looked absolutely radiant. Worth every penny!"</p>
+                    <div class="testimonial-meta">Engagement Makeup • Delhi</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face" alt="Kavya Patel" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Kavya Patel</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Amazing experience! They did makeup for my entire bridal party in Goa. Everyone looked stunning and the makeup stayed fresh despite the beach humidity. Highly professional team!"</p>
+                    <div class="testimonial-meta">Destination Wedding • Goa</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=150&h=150&fit=crop&crop=face" alt="Shreya Singh" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Shreya Singh</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Corporate event makeup for our company's annual gala. They understood the professional look I needed while still making me feel glamorous. Received so many compliments!"</p>
+                    <div class="testimonial-meta">Corporate Event • Kolkata</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Appointment</h2>
+                <p class="section-subtitle">Ready to transform your look? Contact us for bookings across India or visit our Kolkata studio</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 class="form-title">Send us a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceType">Service Type *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select a service</option>
+                                <option value="Bridal Makeup">Bridal Makeup</option>
+                                <option value="Party Makeup">Party Makeup</option>
+                                <option value="Academy Training">Academy Training</option>
+                                <option value="Consultation">Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventDate">Event Date *</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Location *</label>
+                            <input type="text" id="location" name="location" placeholder="Kolkata / Other City" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your event requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Studio Location</h4>
+                                <p>123 Park Street, Kolkata, West Bengal 700016</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@glamourstudiokolkata.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Contact -->
+                    <div class="contact-card">
+                        <h3>Quick Contact</h3>
+                        <div class="quick-contact-buttons">
+                            <button class="btn btn-whatsapp btn-full" onclick="openWhatsApp()">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </button>
+                            <button class="btn btn-call btn-full" onclick="makeCall()">
+                                <i class="fas fa-phone"></i>
+                                Call Now
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="contact-card">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link wedmegood" target="_blank">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Google Maps -->
+            <div class="map-container">
+                <h3>Find Our Studio</h3>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0394739958447!2d88.35155931544176!3d22.562082185184863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a9e9b0f0e5%3A0x6067df9b32b86a9b!2sPark%20St%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1635840291234!5m2!1sen!2sin"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Glamour Studio</h3>
+                    <p class="footer-description">
+                        Kolkata's premier makeup destination for bridal, party, and special occasion makeup. 
+                        Professional training academy available.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Bridal Makeup</a></li>
+                        <li><a href="#services">Party Makeup</a></li>
+                        <li><a href="#academy">Academy Training</a></li>
+                        <li><a href="#contact">Destination Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Park Street, Kolkata</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> info@glamourstudio.com</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp Available</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glamour Studio Kolkata. All rights reserved. | Designed with ❤️ for beauty enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <!-- WhatsApp Button -->
+        <button class="fab-button whatsapp-fab" onclick="openWhatsApp()" aria-label="Contact via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+        
+        <!-- Scroll to Top Button -->
+        <button class="fab-button scroll-top-fab" id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
